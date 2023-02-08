@@ -1,0 +1,62 @@
+AWS Project: Deploying a static website with AWS
+
+##AWS Services for the project
+-VPC
+-EC2
+-Security group
+-NAT gateway
+-Classic Load Balancer
+-Bastion Host instance
+-EIP
+-Keypairs
+
+### VPC Network Design:
+
+-VPC IP Range: 172.18.0.0/16
+4 subnets: 2 public subnets, 2 private subnets
+2 zones: us-east-1a and us-east-1b
+172.18.1.0/24 public-sub 1:us-east-1a
+172.18.2.0/24 public-sub 2:us-east-1b
+172.18.3.0/24 private-sub 1:us-east-1a
+172.18.4.0/24 private-sub 2:us-east-1b
+1 Internet gateway
+1 NAT gateway
+1 EIP
+2 Route Tables: 1 Public subnet Route Table, 1 Private subnet Route Table
+1 Bastion host in Pub subnet
+
+## Deploying the website
+
+-Let's login into our AWS account and for security reason, we can use an IAM user who have full administration privilage.
+If you don't have one and don't know how to create one, just follow this document: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html.
+
+-Now, let get started with the project:
+-Let's create the VPC first before other service. Navigate to the VPC console by searching VPC or using the service list option.
+I am going to create my VPC in the N. Virginia (us-east-1) region because I am closer to this region.
+
+#If you look at the VPC home page, we can see that I have 1 VPC, 6 subnets, 1 security group, etc. AWS always have default services in your account for
+security reasons because if we do not define a security option, then AWS would applied the default option for us.
+
+# Creating a VPC with more than one subnets with my IP range: 172.18.0.0/16
+
+# Setting up my public and private subnets for my VPC
+
+# Creating a NAT gateway in the public subnet and allocate an Elastic IP
+
+# Launching a Centos7 instance for website
+
+# Entering command to launch my website
+
+# Creating a bastion host instances in a public subnet
+
+# Login into my bastion host instance from my computer
+
+# Creating a load balancer
+
+# The website is load balancer
+
+# My two instances running
+
+# Accessing my website using the load balancer DNS name
+
+

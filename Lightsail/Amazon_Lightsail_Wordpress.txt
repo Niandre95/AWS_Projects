@@ -1,0 +1,52 @@
+AWS Project: Deploy a WordPress website with Amazon Lightsail.
+
+-WordPress website with Amazon Lightsail:
+# Amazon Lightsail service provides easy-to-use and simplified cloud resources to get your
+web application or websites up and running in just a few clicks. It offers virtual servers, storage,
+databases, and networking, plus a cost-effective monthly plan for using the service.
+With Lightsail, we can easily spin up websites or applications on a Virtual Private server using
+pre-configured blueprints like WordPress, Prestashop, or LAMP.
+
+# Problem Statement:
+A customer wanted to simplify the process that takes to host a WordPress website on AWS, which would
+allow her to connect with audiences around the globe. Also, the customer didn't want to pay a lot
+for the services.
+
+# Solution Statement:
+
+# The best option for the customer was to create her WordPress website with Amazon Lightsail
+because Lightsail provides easy to use method to get a web application or website up and running in just a few clicks.
+Most importantly, Amazon Lightsail has a cost-effective monthly plan for services that run the website.
+
+# In this project, I am going to launch a WordPress website with Lightsail and provide a static IP
+address to the instance. Also, I am going to create a DNS zone for the site domain and map it to
+the instance for easy access.
+
+
+# Creating the project
+
+# Creating the instance and selecting the AWS region
+
+# Selecting the platform for the WordPress to build the website
+
+# Selecting the instance price options
+
+# The Website Instance
+
+# Creating a static IP address for the instance
+
+# Login into the WordPress site
+
+# Displaying one of the WordPress page
+
+# I created a DNS zone for the site and used Route 53 to manage the DNS records.
+
+
+
+
+
+
+
+
+
+

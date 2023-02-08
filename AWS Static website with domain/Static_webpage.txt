@@ -1,0 +1,23 @@
+# Hosting a Static website on AWS
+
+# Problem Statement:
+A client wants me to host his school website (The information is hard code and I have access to the code file) on AWS.
+# Requirements:
+-The website should be accessible with a domain name
+-The website should be available globally and load fast
+-The customer wants a cost effective but efficient solution
+-Also, the website should be secured with https.
+
+# Solution Statement:
+- I'll create an Amazon S3 bucket to hold the static website files and an Amazon CloudFront distribution to serve
+the website globally. Amazon Route 53 will manage the website domain name, and AWS Certificate Manager to provide
+a valid SSL/TLS certificate while making sure I still within the customer's budget.
+
+# Services for the project:
+-Amazon S3
+-Amazon CloudFront
+-Amazon Route 53
+-AWS Certificate Manager
+
+
+

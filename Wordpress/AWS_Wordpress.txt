@@ -1,0 +1,78 @@
+AWS-Project: WordPress
+-Creating a highly available WordPress website on AWS.
+
+# Problem Statement: 
+- A customer needs a blog website that she can use to post content, so users can see her work. The customer has some type of technical skills but would love
+to automate some of the technical tasks. The customer wants a service that can automate all the database tasks, but still want to have some type of control of the computing processes
+that run her site. More importantly, the customer wants the website to be inside a virtual private network for security reasons.
+
+# Solution Statement:
+- I advise the customer to go with Amazon AWS for hosting her website because AWS has a centralized system in terms of managing resources and services. She can
+benefit from it and AWS can also make her website highly available so users can access her website.
+
+# AWS Services for the website:
+- AWS Cloud platform: to host and manage the website.
+- WordPress: to build the blog website.
+- VPC: for the networking setting.
+- RDS: to automate the database tasks.
+- EC2: for the computing processes of the website and still give her the option to change it later on.
+-MySQL: to store the website information.
+-Security Group: to secure her AWS resources.
+-Keypairs: to access the EC2 through an ssh command line.
+
+-Let's login into our AWS account. I am going to use my IAM user to access my AWS account because it's best practice to use an IAM user
+who has administration privilege to access the account instead the root user.
+
+-Let's create a highly available WordPress website:
+I am creating the project in the N. Virginia (us-east-1) region because that is where the customer wanted the site to be hosted it. The goal is to create all the resources outside
+of global resources in this region because it's easy for the customer to manage all her resources.
+
+### VPC Network Design:
+
+-VPC IP Range: 172.20.0.0/16
+4 subnets: 2 public subnets, 2 private subnets
+2 zones: us-east-1a and us-east-1b
+172.20.1.0/24 public-sub 1:us-east-1a
+172.20.2.0/24 public-sub 2:us-east-1b
+172.20.3.0/24 private-sub 1:us-east-1a
+172.20.4.0/24 private-sub 2:us-east-1b
+
+# Creating a VPC for the website 
+
+# creating a DB subnet for the database
+
+# Creating RDS service with mySQL database for information storage
+ 
+# Launching an EC2 for the website
+
+# Connecting into the EC2 instance
+
+# Making sure that the httpd webserver is running in the instance
+
+# Checking the EC2 instance for the public IP to access the wordpress website
+
+# Accessing the Wordpress login page
+
+# Accessing a page from the blog
+
+
+# After creating the website domain name with Godaddy, I used Route 53 to manage the DNS records and to check the health of the website.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

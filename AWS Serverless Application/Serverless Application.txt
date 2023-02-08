@@ -1,0 +1,36 @@
+# Serverless AWS Project:
+
+# Building a CRUD Serverless API with AWS Lambda, API Gateway and a DynamoDB with cloudwatch and SNS notifications.
+
+# Problem Statement:
+A client has build a user registration web application for a company. The front-end is written in JavaScript and has to function with web API; 
+while the backend is written in Python. The client wants this application to be deploy on AWS using serveless services options for the backend. Also,
+the client wants to monitor the application and get notified in case they are errors or too much traffic.
+
+# Solution Statement:
+I am going to create API with endpoints so that the frontend can use it, also, create a lambda function to manage the request from the
+API gateway and a dynamidb to store data. The lambda function will also communicate with the dynamodb. To store the frontend JavaScript code,
+I am going to create an Amazon S3 bucket to hold the code and an Amazon CloudFront distribution to serve the website globally; while 
+Amazon Route 53 will manage the domain name, and AWS Certificate Manager will provide a valid SSL/TLS certificate. Lastly, AWS Cloudwatch is going to 
+manage the logs.
+
+# Some Endpoints for the project:
+
+-Health check: This endpoint will be used to study the applications' health. It has a GET method to return a 200 response when called.
+-User: This endpoint will support GET, POST, DELETE, and PUT methods. It will be use to create, modify, delete, or display users' information.
+-Users: This endpoint will be used to list all the users in the database.
+
+# Services to be used:
+-AWS Lambda
+-AWS API Gateway
+-DynamoDB
+-Amazon S3
+-Amazon CloudFront
+-Amazon Route 53
+-AWS Certificate Manager
+- AWS SNS
+- AWS Cloudwatch
+
+# Lambda function description:
+-The Lambda function is going to creates, reads, updates, and deletes from DynamoDB. Also, the function uses events from API Gateway to determine how to interact
+with DynamoDB.
